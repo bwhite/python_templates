@@ -14,18 +14,50 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-"""
+"""Example python script
 Usage:
-python 
+python base.py
 """
 
-__author__ =  'Brandyn A. White <bwhite@cs.umd.edu>'
-__version__=  '0.1'
+__author__ = 'Brandyn A. White <bwhite@cs.umd.edu>'
+__version__ = '0.1'
 __licence__ = 'GPL V3'
 
 
+def example_func(a, b):
+    """Example function that divides numbers
+
+    Args:
+        a: Numerator (float)
+        b: Denominator (float)
+
+    Returns:
+        a divided by b
+
+    Raises:
+        ZeroDivisionError: b is equal to zero.
+    """
+    return a / b
+
+
+def example_gen(a):
+    """Example generator of sums of sequential numbers starting at a
+
+    Args:
+        a: initial number
+
+    Yields:
+        The sum
+    """
+    s = a
+    while 1:
+        yield s
+        a += 1
+        s += a
+
+
 def _main():
-    pass
+    print(__doc__)
 
 if __name__ == '__main__':
     _main()
