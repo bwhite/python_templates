@@ -13,13 +13,15 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+"""Test
+"""
 __author__ = 'Brandyn A. White <bwhite@cs.umd.edu>'
 __license__ = 'GPL V3'
 
 import unittest
 
-class Test(unittest.TestCase):        
+
+class Test(unittest.TestCase):
     def test_add(self):
         self.assertEqual(1 + 1, 2)
 
